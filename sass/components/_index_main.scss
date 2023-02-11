@@ -1,0 +1,175 @@
+.main-title {
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to bottom,
+      $bacgroundGradient 0%,
+      $bacgroundGradient 50%
+    ),
+    url(../images/background_img.jpg);
+  &__button {
+    font-weight: 700;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 200px;
+    &:hover,
+    &:focus {
+      background-color: $active;
+      color: $primaryLight;
+    }
+  }
+  & div {
+    text-align: center;
+  }
+}
+.strenght {
+  display: flex;
+  list-style: none;
+  padding-inline-start: 0px;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 94px;
+  margin: 0px;
+  & h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  & p {
+    font-size: 14px;
+    line-height: 1.71;
+    margin: 0px;
+  }
+  & svg {
+    width: 270px;
+    height: 120px;
+    background-color: $teamSectionBg;
+    margin-bottom: 30px;
+  }
+  &__icons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.team-background {
+  background-color: $teamSectionBg;
+}
+.advantages__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+  margin: 0px;
+  height: 294px;
+}
+.advantages__item {
+  position: relative;
+}
+.advantages__item > .label {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: $advantagesLabel;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: $primaryLight;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 27px 90px;
+  margin: 0;
+}
+.team {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+  margin: 0;
+  & li {
+    background-color: $primaryLight;
+    box-shadow: 0px 4px 4px 0px $boxShadow;
+  }
+  &__picture {
+    display: block;
+  }
+  & h4 {
+    font-weight: 500;
+    line-height: 1.17;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  & p {
+    line-height: 1.88;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  & figure {
+    margin: 0;
+  }
+}
+.team-sm {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0px;
+  gap: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 30px;
+  & li {
+    box-shadow: none;
+  }
+  & a {
+    @extend %iconsSM;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      border-radius: 50%;
+      background-color: $active;
+    }
+  }
+  &__icon {
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    fill: $customers;
+    &:hover {
+      fill: $primaryLight;
+    }
+  }
+  &__link:focus svg {
+    fill: $primaryLight;
+  }
+}
+.customers {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  padding-inline-start: 0px;
+  margin: 0px;
+  gap: 30;
+  & a {
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $customers;
+    fill: $customers;
+    &:hover,
+    &:focus {
+      border-color: $active;
+      fill: $active;
+    }
+  }
+  &__links svg {
+    padding: 16px 32px;
+  }
+  &__links:focus {
+    fill: $active;
+  }
+}

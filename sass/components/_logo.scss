@@ -1,0 +1,17 @@
+.logo {
+  font-family: $secondFont;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.38;
+  text-decoration: none;
+}
+.logo--blue {
+  color: $active;
+}
+.logo--black {
+  color: $logoDark;
+}
+.logo--white {
+  color: $primaryLight;
+}

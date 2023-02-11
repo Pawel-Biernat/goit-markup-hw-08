@@ -1,0 +1,40 @@
+$primaryDark: rgba(33, 33, 33, 1);
+$headerUnderline: rgba(236, 236, 236, 1);
+$bacgroundGradient: rgba(47, 48, 58, 0.4);
+$active: rgba(33, 150, 243, 1);
+$teamSectionBg: rgba(245, 244, 250, 1);
+$teamBorder: rgba(238, 238, 238, 1);
+$customers: rgba(175, 177, 184, 1);
+$contacts: rgba(117, 117, 117, 1);
+$navReference: rgba(33, 33, 33, 1);
+$logoDark: rgba(0, 0, 0, 1);
+$footerLinks: rgba(255, 255, 255, 0.6);
+$footerSm: rgba(255, 255, 255, 0.1);
+$signBorder: rgba(255, 255, 255, 0.3);
+$signBg: rgba(47, 48, 58, 1);
+$boxShadow: rgba(0, 0, 0, 0.25);
+$modalBg: rgba(0, 0, 0, 0.2);
+$modalCloseBorder: rgba(0, 0, 0, 0.1);
+$formBorder: rgba(33, 33, 33, 0.2);
+$formPlaceholder: rgba(117, 117, 117, 0.5);
+$advantagesLabel: rgba(47, 48, 58, 0.8);
+$projectOverlay: rgba(33, 150, 243, 0.9);
+$primaryLight: rgba(255, 255, 255, 1);
+$firstFont: "Roboto", sans-serif;
+$secondFont: "Raleway", sans-serif;
+%iconsSM {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+%sendButton {
+  width: 200px;
+  height: 50px;
+  border: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $active;
+  color: $primaryLight;
+  font-weight: 700;
+}

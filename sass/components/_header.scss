@@ -1,0 +1,44 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.header--underline {
+  border-bottom: 1px solid $headerUnderline;
+}
+.contacts {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-left: 15;
+  &__mail {
+    display: flex;
+    width: 161px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__tel {
+    display: flex;
+    width: 130px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    fill: $contacts;
+    &:hover {
+      fill: $active;
+    }
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.17;
+    font-style: normal;
+    text-decoration: none;
+    color: $contacts;
+    &:hover,
+    &:focus {
+      color: $active;
+    }
+  }
+}
